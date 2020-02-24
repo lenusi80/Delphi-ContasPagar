@@ -1,0 +1,100 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1982a3e4-05c3-42c3-b646-8f23b53d4525}</ProjectGuid>
+    <MainSource>ContasPagar.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>ContasPagar.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1046</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">ContasPagar.dpr</Source></Source></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="ContasPagar.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="ABOUT.pas">
+      <Form>AboutBox</Form>
+    </DCCReference>
+    <DCCReference Include="UAltSenhas.pas">
+      <Form>FrmAltSenhas</Form>
+    </DCCReference>
+    <DCCReference Include="Ubackup.pas">
+      <Form>FrmBackup</Form>
+    </DCCReference>
+    <DCCReference Include="UCadFornec.pas">
+      <Form>FrmCadForncec</Form>
+    </DCCReference>
+    <DCCReference Include="UCadPedidos.pas">
+      <Form>frmCadPedidos</Form>
+    </DCCReference>
+    <DCCReference Include="UConfigBD.pas">
+      <Form>FrmConfigBD</Form>
+    </DCCReference>
+    <DCCReference Include="UCorFundo.pas">
+      <Form>FrmCorFundo</Form>
+    </DCCReference>
+    <DCCReference Include="UCreditos.pas">
+      <Form>FrmCreditos</Form>
+    </DCCReference>
+    <DCCReference Include="UDespDivResumo.pas">
+      <Form>FrmDespDivResumo</Form>
+    </DCCReference>
+    <DCCReference Include="UDM.pas">
+      <Form>DM</Form>
+    </DCCReference>
+    <DCCReference Include="UDMRelatorios.pas">
+      <Form>DMRelatorios</Form>
+    </DCCReference>
+    <DCCReference Include="UEstornos.pas">
+      <Form>FrmEstornos</Form>
+    </DCCReference>
+    <DCCReference Include="UFiltroRelatorio.pas">
+      <Form>FrmFiltroRelatorio</Form>
+    </DCCReference>
+    <DCCReference Include="UFiltroRelatorio2.pas">
+      <Form>FrmFiltroRelatorio2</Form>
+    </DCCReference>
+    <DCCReference Include="UFornecResumo.pas">
+      <Form>frmResumoFornecedores</Form>
+    </DCCReference>
+    <DCCReference Include="UFrmCalendario.pas">
+      <Form>FrmCalendario</Form>
+    </DCCReference>
+    <DCCReference Include="UGastosDiversos.pas">
+      <Form>FrmGastosDiversos</Form>
+    </DCCReference>
+    <DCCReference Include="ULogin.pas">
+      <Form>FrmLogin</Form>
+    </DCCReference>
+    <DCCReference Include="UNf.pas">
+      <Form>FrmNf</Form>
+    </DCCReference>
+    <DCCReference Include="Upagamentos.pas">
+      <Form>FrmPagamentos</Form>
+    </DCCReference>
+    <DCCReference Include="UPrincipal.pas">
+      <Form>FrmPrincipal</Form>
+    </DCCReference>
+    <DCCReference Include="URotinas.pas" />
+    <DCCReference Include="UVendedores.pas">
+      <Form>FrmVendedores</Form>
+    </DCCReference>
+  </ItemGroup>
+</Project>
